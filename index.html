@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Academic Project Page caca</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,22 +52,40 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Model Predictive Contouring Control with Barrier and Lyapunov Functions for Stable Path-Following in UAV Systems</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Bryan S. Guevara</a><sup>1</sup>,
+              </span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Viviana Moya</a><sup>2</sup>,
+                </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Luis F. Recalde</a><sup>1</sup>,
                   </span>
+                  <span class="author-block"></span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">David Pozo-Espin</a><sup>3</sup><sup>*</sup>,
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Daniel Gandolfo</a><sup>1</sup>,
+                  </span><span class="author-block"></span>
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Juan M. Toibero</a><sup>1</sup>
+                </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span  class="author-block"><sup>1</sup>Instituto de Automática, Universidad Nacional de San Juan - CONICET, San Juan, Argentina,</span><br>
+                    <span  class="author-block"><sup>2</sup>Facultad de Ciencias Técnicas, Universidad Internacional del Ecuador, Quito, Ecuador </span><br>
+                    <span  class="author-block"> <sup>3</sup>Facultad de Ingeniería y Ciencias Aplicadas, Universidad de las Américas, Quito, Ecuador </span><br>
+                    
+                    <span class="author-block">IEEE Access, vol. 12, pp. 77121-77132, 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Autor</small></span>
+                    
                   </div>
+                  
+
+                  
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -123,17 +141,13 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser gif -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/gif/MPCC.gif" alt="MPCC Animation" style="width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        The MPCC framework was tested in simulations involving both static and mobile virtual obstacles to assess its path-following and obstacle-avoidance capabilities. During the test, a mobile obstacle moved along the same path but in the opposite direction, increasing the relative velocity between the UAV and the obstacle due to their opposing movements. Animation illustrates the UAV's trajectory as it navigates around both static and mobile obstacles, demonstrating the MPCC's effectiveness in minimizing contour and lag errors while ensuring consistent progress along the desired path.  
       </h2>
     </div>
   </div>
@@ -148,7 +162,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            In this study, we propose a novel method that integrates Nonlinear Model Predictive Contour Control (NMPCC) with an Exponentially Stabilizing Control Lyapunov Function (ES-CLF) and Exponential Higher-Order Control Barrier Functions to achieve stable path-following and obstacle avoidance in UAV systems. This framework enables unmanned aerial vehicles (UAVs) to safely navigate around both static and dynamic obstacles while strictly adhering to desired paths. The quaternion-based formulation ensures precise orientation and attitude control, while a robust optimization solver enforces the constraints imposed by the Control Lyapunov Function (CLF) and Control Barrier Functions (CBF), ensuring reliable real-time performance. The method was validated in a Model-in-the-Loop (MiL) environment, demonstrating effective path tracking and obstacle avoidance. The results highlight the framework’s ability to minimize both orthogonal and tangential errors, ensuring stability and safety in complex environments.
           </p>
         </div>
       </div>
@@ -156,46 +170,6 @@
   </div>
 </section>
 <!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
 
 
 
@@ -255,17 +229,13 @@
 <!-- End video carousel -->
 
 
-
-
-
-
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Published Paper</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/paper.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -278,7 +248,17 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@ARTICLE{10542329,
+        author={Guevara, Bryan S. and Recalde, Luis F, Gandolfo, Daniel C. and Toibero, Juan M.},
+        journal={IEEE Access}, 
+        title={Model Predictive Contouring Control with Barrier and Lyapunov Functions for Stable Path-Following in UAV Systems}, 
+        year={2024},
+        volume={12},
+        number={},
+        pages={77121-77132},
+        keywords={Autonomous aerial vehicles;Collision avoidance;Vehicle dynamics;Observers;Adaptation models;Quadrotors;Adaptive control;Nonlinear dynamical systems;Predictive control;Predictive models;NMPC;adaptive control;disturbance estimation;UAV dynamics;momentum observer;CasADi},
+        doi={10.1109/ACCESS.2024.3407684}}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,9 +271,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This work was supported by the Instituto de Investigación de la Universidad Nacional de San Juan (UNSJ), CONICET, and with additional support from the DAAD (German Academic Exchange Service).
           </p>
 
         </div>
